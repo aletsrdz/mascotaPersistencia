@@ -4,23 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="rdz.alets.mascotaspractica.MainActivity">
+    tools:context="rdz.alets.mascotaspractica.MascotasFavoritas">
 
-    <include android:id="@+id/miActionBar"
-        layout="@layout/actionbar">
+    <include android:id="@+id/miActionBarFav"
+        layout="@layout/actionbarfav">
     </include>
-    <!--ListView
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        android:id="@+id/lstMascotas"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp"></ListView>-->
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/rvMascotas"
-        android:layout_below="@+id/miActionBar"
+        android:id="@+id/rvMascotasFav"
+        android:layout_below="@+id/miActionBarFav"
         />
 
 </RelativeLayout>
