@@ -1,8 +1,20 @@
 <resources>
-    <string name="app_name">MascotasPractica</string>
+    <string name="app_name">Mascotas Practica</string>
     <string name="pnombre">nombre</string>
     <string name="praiting">5</string>
     <string name="petagram">Petagram</string>
+    <string name="mcontacto">Contacto</string>
+    <string name="mabout">Acerca de</string>
+    <string name="mfavoritos">Favoritos</string>
+    <string name="mfavorite">Mascotas Favoritas</string>
+    <string name="resumen">Ingeniero en ComputaciÛn por la facultad de IngenierÌa de la UNAM. Actualmente colaboro la Sala de InnovaciÛn para la Docencia y la InvestigaciÛn desarrollando y diseÒando sistemas de cÛmputo de proyectos educativos y asesorando a los profesores para desarrollar propuestas educativas con ayuda de las TICís. Ha impartido cursos y talleres para profesores en tecnologÌa aplicada a la enseÒanza de las lenguas.</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_cuerpo">DescripciÛn</string>
+    <string name="btn_enviar">Enviar correo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

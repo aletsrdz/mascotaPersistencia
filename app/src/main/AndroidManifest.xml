@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MascotasFavoritas"></activity>
-
+        <activity android:name=".MascotasFavoritas" />
+        <activity android:name=".ActivityAbout" />
+        <activity android:name=".ActivityContacto"></activity>
     </application>
 
 </manifest>

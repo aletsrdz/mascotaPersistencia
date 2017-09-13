@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -46,19 +48,37 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, MascotasFavoritas.class);
                 startActivity(intent);
-                //Toast.makeText(MainActivity.this, "You clicked on ImageView", Toast.LENGTH_LONG).show();
+
             }
         });
 
 
-        /*
-        ArrayList<String> nombresMascota = new ArrayList<>();
-        for (Mascota mascota:mascotas) {
-            nombresMascota.add(mascota.getNombre());
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_opciones, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.mcontacto:
+                Intent intentContacto = new Intent(this, ActivityContacto.class);
+                startActivity(intentContacto);
+                break;
+            case R.id.mabout:
+                Intent intentAbout = new Intent(this, ActivityAbout.class);
+                startActivity(intentAbout);
+                break;
+            case R.id.mHuellita:
+                Intent intentFavorito = new Intent(MainActivity.this, MascotasFavoritas.class);
+                startActivity(intentFavorito);
+                break;
         }
-        */
-
-
+        return super.onOptionsItemSelected(item);
     }
 
     public void inicialiazarAdaptador(){
