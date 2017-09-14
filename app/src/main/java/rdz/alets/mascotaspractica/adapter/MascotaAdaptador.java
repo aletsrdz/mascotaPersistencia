@@ -1,14 +1,16 @@
-package rdz.alets.mascotaspractica;
+package rdz.alets.mascotaspractica.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import rdz.alets.mascotaspractica.pojo.Mascota;
+import rdz.alets.mascotaspractica.R;
 
 /**
  * Created by AletsRdz on 03/09/17.

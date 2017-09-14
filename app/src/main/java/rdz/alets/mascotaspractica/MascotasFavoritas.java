@@ -10,6 +10,9 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 
+import rdz.alets.mascotaspractica.adapter.MascotaAdaptador;
+import rdz.alets.mascotaspractica.pojo.Mascota;
+
 public class MascotasFavoritas extends AppCompatActivity {
 
     ArrayList<Mascota> mascotasFav;
@@ -19,7 +22,7 @@ public class MascotasFavoritas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mascotas_favoritas);
 
-        Toolbar miActionBarFav = (Toolbar)findViewById(R.id.miActionBar);
+        Toolbar miActionBarFav = (Toolbar)findViewById(R.id.miActionBarFav);
         setSupportActionBar(miActionBarFav);
 
         ImageView imgBack = (ImageView)findViewById(R.id.imgBack);

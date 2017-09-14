@@ -1,4 +1,4 @@
-package rdz.alets.mascotaspractica;
+package rdz.alets.mascotaspractica.pojo;
 
 /**
  * Created by AletsRdz on 03/09/17.
