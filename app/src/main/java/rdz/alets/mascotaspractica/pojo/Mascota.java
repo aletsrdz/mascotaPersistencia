@@ -25,6 +25,13 @@ public class Mascota {
         this.raiting = raiting;
     }
 
+    public Mascota(int foto, String raiting){
+        this.foto = foto;
+        this.raiting = raiting;
+    }
+
+
+
     public int getFoto() {
         return foto;
     }

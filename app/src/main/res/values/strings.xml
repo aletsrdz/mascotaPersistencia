@@ -12,6 +12,7 @@
     <string name="hint_email">Email</string>
     <string name="hint_cuerpo">DescripciÛn</string>
     <string name="btn_enviar">Enviar correo</string>
+    <string name="text_cachorrito">Mi cachorrito</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
