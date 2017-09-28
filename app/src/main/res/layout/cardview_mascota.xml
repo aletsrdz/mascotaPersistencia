@@ -9,11 +9,12 @@
     android:layout_marginBottom="@dimen/activity_vertical_margin"
     card_view:cardCornerRadius="@dimen/corner_radius"
     >
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
 
         <ImageView
             android:id="@+id/imgFoto"
@@ -21,50 +22,46 @@
             android:layout_height="wrap_content"
             android:src="@drawable/m2" />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
+            android:layout_height="wrap_content">
 
             <ImageButton
-                android:id="@+id/btnHuesoBlanco"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:background="@color/colorBottonBlanco"
-                android:src="@drawable/huesoblanco" />
+                    android:id="@+id/btnHuesoBlanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBottonBlanco"
+                    android:src="@drawable/huesoblanco"
+                    android:layout_alignParentLeft="true"
+                    />
 
-            <TextView
-                android:id="@+id/tvNombreCV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="@string/pnombre"
-                android:textSize="@dimen/nombre_cardview"
-                android:textStyle="bold" />
-
-
-            <TextView
-                android:id="@+id/tvRaitingCV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:text="@string/praiting"
-                android:textSize="@dimen/nombre_cardview"
-                android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvNombreCV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="@string/pnombre"
+                        android:textSize="@dimen/nombre_cardview"
+                        android:textStyle="bold"
+                        android:layout_alignParentLeft="true"/>
 
             <ImageButton
                 android:id="@+id/btnHuesoAmarillo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
                 android:background="@color/colorBottonBlanco"
                 android:src="@drawable/huesoamarillo" />
-
-        </LinearLayout>
-
-
+            <TextView
+                android:id="@+id/tvRaitingCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="50dp"
+                android:text="@string/praiting"
+                android:textSize="@dimen/nombre_cardview"
+                android:textStyle="bold" />
+        </RelativeLayout>
     </LinearLayout>
-
 </android.support.v7.widget.CardView>

@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -16,7 +17,7 @@ import rdz.alets.mascotaspractica.pojo.Mascota;
 public class MascotasFavoritas extends AppCompatActivity {
 
     ArrayList<Mascota> mascotasFav;
-    private RecyclerView listaMascotasFav;
+    RecyclerView listaMascotasFav;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,17 +49,16 @@ public class MascotasFavoritas extends AppCompatActivity {
     }
 
     public void inicialiazarAdaptadorFav(){
-        MascotaAdaptador adaptadorFav = new MascotaAdaptador(mascotasFav);
+        MascotaAdaptador adaptadorFav = new MascotaAdaptador(mascotasFav, this);
         listaMascotasFav.setAdapter(adaptadorFav);
-
     }
 
     public void inicializarListaMasctotasFav(){
         mascotasFav = new ArrayList<Mascota>();
-        mascotasFav.add(new Mascota(R.drawable.m3, "Favorito Firulais", "3"));
-        mascotasFav.add(new Mascota(R.drawable.m4, "Favorito Dago", "4"));
-        mascotasFav.add(new Mascota(R.drawable.m5, "Favorito Chispita", "5"));
-        mascotasFav.add(new Mascota(R.drawable.m6, "Favorito Chimuelo", "4"));
-        mascotasFav.add(new Mascota(R.drawable.m7, "Favorito Duke", "5"));
+        mascotasFav.add(new Mascota(R.drawable.m3, "Favorito Firulais", 3));
+        mascotasFav.add(new Mascota(R.drawable.m4, "Favorito Dago", 4));
+        mascotasFav.add(new Mascota(R.drawable.m5, "Favorito Chispita", 5));
+        mascotasFav.add(new Mascota(R.drawable.m6, "Favorito Chimuelo", 4));
+        mascotasFav.add(new Mascota(R.drawable.m7, "Favorito Duke", 5));
     }
 }
