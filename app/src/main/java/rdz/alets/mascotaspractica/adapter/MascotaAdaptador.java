@@ -16,6 +16,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import rdz.alets.mascotaspractica.MascotasFavoritas;
+import rdz.alets.mascotaspractica.db.ConstructorMascotas;
 import rdz.alets.mascotaspractica.pojo.Mascota;
 import rdz.alets.mascotaspractica.R;
 
@@ -40,7 +41,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     }
 
     //asocia cada elemento a la lista con cada view
-    public void onBindViewHolder(MascotaViewHolder mascotaViewHolder, int position) {
+    public void onBindViewHolder(final MascotaViewHolder mascotaViewHolder, int position) {
         final Mascota mascota = mascotas.get(position);
 
         mascotaViewHolder.imgFoto.setImageResource(mascota.getFoto());
@@ -62,7 +63,11 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         mascotaViewHolder.btnHuesoBlanco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(activity, "Diste me gusta a" + mascota.getNombre(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(activity, "Diste me gusta a " + mascota.getNombre(), Toast.LENGTH_SHORT).show();
+
+                ConstructorMascotas constructorMascotas = new ConstructorMascotas(activity);
+                constructorMascotas.darRaitingMascota(mascota);
+                mascotaViewHolder.tvRaitingCV.setText(constructorMascotas.obtenerRaitingMascota(mascota));
             }
         });
 
